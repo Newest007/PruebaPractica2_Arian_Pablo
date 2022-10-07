@@ -1,0 +1,92 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #E0DDCF;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+header{
+    padding: 15px 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #474448;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    width: 100vw;
+    margin-top: 50px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+h2{
+    text-align: center; 
+}
+
+img{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-color: #474448;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.cuadro{
+    border-radius: 15px;
+    padding: 35px;
+    margin-bottom: 35px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 5px 5px 14px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+button{
+    writing-mode: horizontal-tb;
+    background-color: #880D1E;
+    color: white;
+    border: #880D1E;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 32%;
+}
+
+td,
+th{
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.table{
+    width: 90%;
+}
+
+
