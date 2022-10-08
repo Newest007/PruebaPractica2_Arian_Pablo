@@ -1,5 +1,8 @@
 const btnAreaCuadrado = document.getElementById("btn-cuadro");
 const btnAreaTriangulo = document.getElementById("btn-triangulo");
+const btnAreaRectangulo = document.getElementById("btn-rectangulo");
+const btnAreaCirculo = document.getElementById("btn-circulo");
+const btnAreaParelelogramo = document.getElementById("btn-paralelogramo");
 
 function areaCuadrado(){
     const contenedorResultado = document.getElementById("resultadoCuadrado");
@@ -19,7 +22,50 @@ function areaTriangulo(){
     if(Number(base) && Number(altura)) {
         if(base > 0 && altura > 0){
             resultado = (base * altura)/ 2;
-            contenedorResultado.innerHTML = `El área del triángulo es ${resultado}`
+            contenedorResultado.innerHTML = `El área del triángulo es ${resultado}cm`;
+        } else {
+            contenedorResultado.innerHTML = `Solamente se permiten valores positivos`;
+        }
+    } else {
+        contenedorResultado.innerHTML = `Debe de ingresar números válidos`;
+    }
+}
+
+function areaRectangulo(){
+    const contenedorResultado = document.getElementById("resultadoRectangulo");
+    let base = prompt("Ingrese la base (b) del rectangulo (en cm)");
+    let altura = prompt("Ingrese la altura (a) del rectangulo (en cm)");
+    if(Number(base) && Number(altura)){
+        if(base >= 0 && altura >= 0){
+            resultado = base * altura;
+            contenedorResultado.innerHTML = `El área del rectángulo es ${resultado}cm`;
+        } else {
+            contenedorResultado.innerHTML = `Solamente se permiten valores positivos`;
+        }
+    } else {
+        contenedorResultado.innerHTML = `Debe de ingresar números válidos`;
+    }
+}
+
+function areaCirculo(){
+    const contenedorResultado = document.getElementById("resultadoCirculo");
+    let radio = prompt("Ingrese el radio del círculo (en cm)");
+    if(Number(radio) && radio > 0){
+        resultado = 3.1416 * Math.pow(radio,2);
+        contenedorResultado.innerHTML = `El área del círculo con radio ${radio}cm es ${resultado}cm`;
+    } else{
+        contenedorResultado.innerHTML = `Debe de ingresar un valor válido`;
+    }
+}
+
+function areaParalelogramo(){
+    const contenedorResultado = document.getElementById("resultadoParalelogramo");
+    let base = prompt("Ingrese la base (b) del paralelogramo (en cm)");
+    let altura = prompt("Ingrese la altura (h) del paralelogramo (en cm)");
+    if(Number(base) && Number(altura)){
+        if(base >= 0 && altura >= 0){
+            resultado = base * altura;
+            contenedorResultado.innerHTML = `El área del paralelogramo es ${resultado}cm`;
         } else {
             contenedorResultado.innerHTML = `Solamente se permiten valores positivos`;
         }
@@ -29,4 +75,7 @@ function areaTriangulo(){
 }
 
 btnAreaCuadrado.addEventListener("click",areaCuadrado);
-btnAreaTriangulo.addEventListener("click",areaTriangulo)
+btnAreaTriangulo.addEventListener("click",areaTriangulo);
+btnAreaRectangulo.addEventListener("click",areaRectangulo);
+btnAreaCirculo.addEventListener("click",areaCirculo);
+btnAreaParelelogramo.addEventListener("click",areaParalelogramo);
