@@ -2,6 +2,7 @@ const btnAreaCuadrado = document.getElementById("btn-cuadro");
 const btnAreaTriangulo = document.getElementById("btn-triangulo");
 const btnAreaRectangulo = document.getElementById("btn-rectangulo");
 const btnAreaCirculo = document.getElementById("btn-circulo");
+const btnAreaParelelogramo = document.getElementById("btn-paralelogramo");
 
 function areaCuadrado(){
     const contenedorResultado = document.getElementById("resultadoCuadrado");
@@ -57,7 +58,24 @@ function areaCirculo(){
     }
 }
 
+function areaParalelogramo(){
+    const contenedorResultado = document.getElementById("resultadoParalelogramo");
+    let base = prompt("Ingrese la base (b) del paralelogramo (en cm)");
+    let altura = prompt("Ingrese la altura (h) del paralelogramo (en cm)");
+    if(Number(base) && Number(altura)){
+        if(base >= 0 && altura >= 0){
+            resultado = base * altura;
+            contenedorResultado.innerHTML = `El área del paralelogramo es ${resultado}cm`;
+        } else {
+            contenedorResultado.innerHTML = `Solamente se permiten valores positivos`;
+        }
+    } else {
+        contenedorResultado.innerHTML = `Debe de ingresar números válidos`;
+    }
+}
+
 btnAreaCuadrado.addEventListener("click",areaCuadrado);
 btnAreaTriangulo.addEventListener("click",areaTriangulo);
 btnAreaRectangulo.addEventListener("click",areaRectangulo);
 btnAreaCirculo.addEventListener("click",areaCirculo);
+btnAreaParelelogramo.addEventListener("click",areaParalelogramo);
