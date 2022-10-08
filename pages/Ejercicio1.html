@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio1</title>
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/ejercicio1.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Prueba Práctica 2 LIC</h1>
+    </header>
+
+    <main>
+        <div class="cuadro">
+            <h3>Ejercicio 1</h3>
+            <br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Figura geométrica</th>
+                        <th>Fórmula</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Cuadrado
+                            <img src="../imagenes/cuadrado.png">
+                            <button class="btn" id="btn-cuadro"><h4>Calcular Área</h4></button>
+                        </td> 
+                        <td>A = a<sup>2</sup><br>
+                            <p id="resultadoCuadrado"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Triángulo
+                            <img src="../imagenes/triangulo.png">
+                            <button class="btn" id="btn-triangulo"><h4>Calcular Área</h4></button>
+                        </td>
+                        <td>A = (b* h) / 2
+                            <p id="resultadoTriangulo"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Rectángulo
+                            <img src="../imagenes/rectangulo.jpg">
+                            <button class="btn" id="btn-rectangulo"><h4>Calcular Área</h4></button>
+                        </td>
+                        <td> A = b * a
+                            <p id="resultadoRectangulo"></p>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </main>
     
 </body>
 </html>

@@ -40,10 +40,25 @@ h2{
     text-align: center; 
 }
 
+h3{
+    border-radius: 15px;
+    padding: 15px 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #EF2D56;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
 img{
-    width: 30%;
+    width: 20%;
     display: block;
     margin: auto;
+}
+
+table.table img{
+    width: 40%;
 }
 
 footer{
@@ -68,9 +83,9 @@ footer{
 
 button{
     writing-mode: horizontal-tb;
-    background-color: #880D1E;
+    background-color: #EF2D56;
     color: white;
-    border: #880D1E;
+    border: #EF2D56;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -79,14 +94,25 @@ button{
     width: 32%;
 }
 
+button.btn{
+    background-color: #A8DADC;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+    color: black;
+}
+
 td,
 th{
     text-align: center;
     padding: 5px 20px;
+    border: 1px solid #474448;
+    border-radius: 5px;
+    max-width: 100px;
 }
 
 .table{
-    width: 90%;
+    width: 100%;
 }
 
 
