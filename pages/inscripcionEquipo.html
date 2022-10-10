@@ -32,7 +32,7 @@
 
     <div class="container-md p-3">
         <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item"> 
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Portero
@@ -42,24 +42,24 @@
                 <div class="accordion-body">
                     <div class="row mb-3">
                         <div class="col-7">
-                            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputNombrePortero" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputNombrePortero" >
                         </div>
                         <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Carnet</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputCarnetPortero" class="form-label">Carnet</label>
+                            <input type="text" class="form-control" id="inputCarnetPortero" >
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-1">
-                            <label for="exampleFormControlInput1" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputEdadPortero" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="inputEdadPortero" >
                         </div>
                         <div class="col-6"></div>
                         <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Sexo</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Selecciona un género</option>
+                            <label for="selectSexoPortero" class="form-label">Sexo</label>
+                            <select class="form-select" aria-label="Default select example" id="selectSexoPortero">
+                                <option selected>Selecciona una opción</option>
                                 <option value="1">Masculino</option>
                                 <option value="2">Femenino</option>
                               </select>
@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="buttonGuardar" id="btnPortero"> Guardar </button>
+                        <button class="buttonGuardar" id="btnGuardarPortero"> Guardar </button>
                     </div>
                 </div>
               </div>
@@ -81,25 +81,110 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <div class="row mb-3">
+                        <h4>- Defensa 1</h4>
                         <div class="col-7">
-                            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputNombreDefensa1" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputNombreDefensa1" >
                         </div>
                         <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Carnet</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputCarnetDefensa1" class="form-label">Carnet</label>
+                            <input type="text" class="form-control" id="inputCarnetDefensa1" >
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-1">
-                            <label for="exampleFormControlInput1" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputEdadDefensa1" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="inputEdadDefensa1" >
                         </div>
                         <div class="col-6"></div>
                         <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Sexo</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Selecciona un género</option>
+                            <label for="selectSexoDefensa1" class="form-label">Sexo</label>
+                            <select class="form-select" aria-label="Default select example" id="selectSexoDefensa1">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                              </select>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="row mb-3">
+                        <h4>- Defensa 2</h4>
+                        <div class="col-7">
+                            <label for="inputNombreDefensa2" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputNombreDefensa2" >
+                        </div>
+                        <div class="col-5">
+                            <label for="inputCarnetDefensa2" class="form-label">Carnet</label>
+                            <input type="text" class="form-control" id="inputCarnetDefensa2" >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-1">
+                            <label for="inputEdadDefensa2" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="inputEdadDefensa2" >
+                        </div>
+                        <div class="col-6"></div>
+                        <div class="col-5">
+                            <label for="selectSexoDefensa2" class="form-label">Sexo</label>
+                            <select class="form-select" aria-label="Default select example" id="selectSexoDefensa2">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                              </select>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="row mb-3">
+                        <h4>- Defensa 3</h4>
+                        <div class="col-7">
+                            <label for="inputNombreDefensa3" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputNombreDefensa3" >
+                        </div>
+                        <div class="col-5">
+                            <label for="inputCarnetDefensa3" class="form-label">Carnet</label>
+                            <input type="text" class="form-control" id="inputCarnetDefensa3" >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-1">
+                            <label for="inputEdadDefensa3" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="inputEdadDefensa3" >
+                        </div>
+                        <div class="col-6"></div>
+                        <div class="col-5">
+                            <label for="selectSexoDefensa3" class="form-label">Sexo</label>
+                            <select class="form-select" aria-label="Default select example" id="selectSexoDefensa3">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                              </select>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="row mb-3">
+                        <h4>- Defensa 4</h4>
+                        <div class="col-7">
+                            <label for="inputNombreDefensa4" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputNombreDefensa4" >
+                        </div>
+                        <div class="col-5">
+                            <label for="inputCarnetDefensa4" class="form-label">Carnet</label>
+                            <input type="text" class="form-control" id="inputCarnetDefensa4" >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-1">
+                            <label for="inputEdadDefensa4" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="inputEdadDefensa4" >
+                        </div>
+                        <div class="col-6"></div>
+                        <div class="col-5">
+                            <label for="selectSexoDefensa4" class="form-label">Sexo</label>
+                            <select class="form-select" aria-label="Default select example" id="selectSexoDefensa4">
+                                <option selected>Selecciona una opción</option>
                                 <option value="1">Masculino</option>
                                 <option value="2">Femenino</option>
                               </select>
@@ -107,8 +192,8 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="buttonGuardar" id="btnPortero"> Guardar </button>
-                    </div>
+                        <button class="buttonGuardar" id="btnGuardarDefensas"> Guardar </button>
+                    </div>                    
                 </div>
               </div>
             </div>
@@ -121,34 +206,120 @@
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <div class="row mb-3">
-                        <div class="col-7">
-                            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                        <div class="row mb-3">
+                            <h4>- Mediocampista 1</h4>
+                            <div class="col-7">
+                                <label for="inputNombreMedio1" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="inputNombreMedio1" >
+                            </div>
+                            <div class="col-5">
+                                <label for="inputCarnetMedio1" class="form-label">Carnet</label>
+                                <input type="text" class="form-control" id="inputCarnetMedio1" >
+                            </div>
                         </div>
-                        <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Carnet</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                        <div class="row mb-3">
+                            <div class="col-1">
+                                <label for="inputEdadMedio1" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="inputEdadMedio1" >
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="col-5">
+                                <label for="selectSexoMedio1" class="form-label">Sexo</label>
+                                <select class="form-select" aria-label="Default select example" id="selectSexoMedio1">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                  </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-1">
-                            <label for="exampleFormControlInput1" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" >
+                        <br>
+                        <hr>
+                        <div class="row mb-3">
+                            <h4>- Mediocampista 2</h4>
+                            <div class="col-7">
+                                <label for="inputNombreMedio2" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="inputNombreMedio2" >
+                            </div>
+                            <div class="col-5">
+                                <label for="inputCarnetMedio2" class="form-label">Carnet</label>
+                                <input type="text" class="form-control" id="inputCarnetMedio2" >
+                            </div>
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Sexo</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Selecciona un género</option>
-                                <option value="1">Masculino</option>
-                                <option value="2">Femenino</option>
-                              </select>
+                        <div class="row mb-3">
+                            <div class="col-1">
+                                <label for="inputEdadMedio2" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="inputEdadMedio2" >
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="col-5">
+                                <label for="selectSexoMedio2" class="form-label">Sexo</label>
+                                <select class="form-select" aria-label="Default select example" id="selectSexoMedio2">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                  </select>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="buttonGuardar" id="btnPortero"> Guardar </button>
-                    </div>
+                        <br>
+                        <hr>
+                        <div class="row mb-3">
+                            <h4>- Mediocampista 3</h4>
+                            <div class="col-7">
+                                <label for="inputNombreMedio3" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="inputNombreMedio3" >
+                            </div>
+                            <div class="col-5">
+                                <label for="inputCarnetMedio3" class="form-label">Carnet</label>
+                                <input type="text" class="form-control" id="inputCarnetMedio3" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-1">
+                                <label for="inputEdadMedio3" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="inputEdadMedio3" >
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="col-5">
+                                <label for="selectSexoMedio3" class="form-label">Sexo</label>
+                                <select class="form-select" aria-label="Default select example" id="selectSexoMedio3">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="row mb-3">
+                            <h4>- Mediocampista 4</h4>
+                            <div class="col-7">
+                                <label for="inputNombreMedio4" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="inputNombreMedio4" >
+                            </div>
+                            <div class="col-5">
+                                <label for="inputCarnetMedio4" class="form-label">Carnet</label>
+                                <input type="text" class="form-control" id="inputCarnetMedio4" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-1">
+                                <label for="inputEdadMedio4" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="inputEdadMedio4" >
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="col-5">
+                                <label for="selectSexoMedio4" class="form-label">Sexo</label>
+                                <select class="form-select" aria-label="Default select example" id="selectSexoMedio4">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                  </select>
+                            </div>
+                        </div>
+    
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="buttonGuardar" id="btnGuardarMediocamp"> Guardar </button>
+                        </div>
                 </div>
               </div>
             </div>
@@ -161,25 +332,54 @@
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <div class="row mb-3">
+                        <h4>- Delantero 1</h4>
                         <div class="col-7">
-                            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputNombreDelante1" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputNombreDelante1" >
                         </div>
                         <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Carnet</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputCarnetDelante1" class="form-label">Carnet</label>
+                            <input type="text" class="form-control" id="inputCarnetDelante1" >
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-1">
-                            <label for="exampleFormControlInput1" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" >
+                            <label for="inputEdadDelante1" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="inputEdadDelante1" >
                         </div>
                         <div class="col-6"></div>
                         <div class="col-5">
-                            <label for="exampleFormControlInput1" class="form-label">Sexo</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Selecciona un género</option>
+                            <label for="selectSexoDelante1" class="form-label">Sexo</label>
+                            <select class="form-select" aria-label="Default select example" id="selectSexoDelante1">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                              </select>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="row mb-3">
+                        <h4>- Delantero 2</h4>
+                        <div class="col-7">
+                            <label for="inputNombreDelante2" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputNombreDelante2" >
+                        </div>
+                        <div class="col-5">
+                            <label for="inputCarnetDelante2" class="form-label">Carnet</label>
+                            <input type="text" class="form-control" id="inputCarnetDelante2" >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-1">
+                            <label for="inputEdadDelante2" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="inputEdadDelante2" >
+                        </div>
+                        <div class="col-6"></div>
+                        <div class="col-5">
+                            <label for="selectSexoDelante2" class="form-label">Sexo</label>
+                            <select class="form-select" aria-label="Default select example" id="selectSexoDelante2">
+                                <option selected>Selecciona una opción</option>
                                 <option value="1">Masculino</option>
                                 <option value="2">Femenino</option>
                               </select>
@@ -187,7 +387,7 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="buttonGuardar" id="btnPortero"> Guardar </button>
+                        <button class="buttonGuardar" id="btnGuardarDelante"> Guardar </button>
                     </div>
                   </div>
                 </div>
