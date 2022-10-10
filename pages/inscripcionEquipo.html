@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styleInscripcion.css">
+    <script src="../js/ejercicio2.js"></script>
     <title>Ejercicio 2</title>
 </head>
 <body>
@@ -53,21 +54,21 @@
                     <div class="row mb-3">
                         <div class="col-1">
                             <label for="inputEdadPortero" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="inputEdadPortero" >
+                            <input type="number" min="0" class="form-control" id="inputEdadPortero" >
                         </div>
                         <div class="col-6"></div>
                         <div class="col-5">
                             <label for="selectSexoPortero" class="form-label">Sexo</label>
                             <select class="form-select" aria-label="Default select example" id="selectSexoPortero">
-                                <option selected>Selecciona una opción</option>
+                                <option value="">Selecciona una opción</option>
                                 <option value="1">Masculino</option>
                                 <option value="2">Femenino</option>
-                              </select>
+                            </select>
                         </div>
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="buttonGuardar" id="btnGuardarPortero"> Guardar </button>
+                        <button class="buttonGuardar" id="btnGuardarPortero" disabled> Guardar </button>
                     </div>
                 </div>
               </div>
@@ -226,7 +227,7 @@
                             <div class="col-5">
                                 <label for="selectSexoMedio1" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoMedio1">
-                                    <option selected>Selecciona una opción</option>
+                                    <option value="">Selecciona una opción</option>
                                     <option value="1">Masculino</option>
                                     <option value="2">Femenino</option>
                                   </select>
@@ -254,7 +255,7 @@
                             <div class="col-5">
                                 <label for="selectSexoMedio2" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoMedio2">
-                                    <option selected>Selecciona una opción</option>
+                                    <option value="">Selecciona una opción</option>
                                     <option value="1">Masculino</option>
                                     <option value="2">Femenino</option>
                                   </select>
@@ -282,7 +283,7 @@
                             <div class="col-5">
                                 <label for="selectSexoMedio3" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoMedio3">
-                                    <option selected>Selecciona una opción</option>
+                                    <option value="">Selecciona una opción</option>
                                     <option value="1">Masculino</option>
                                     <option value="2">Femenino</option>
                                   </select>
@@ -310,7 +311,7 @@
                             <div class="col-5">
                                 <label for="selectSexoMedio4" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoMedio4">
-                                    <option selected>Selecciona una opción</option>
+                                    <option value="">Selecciona una opción</option>
                                     <option value="1">Masculino</option>
                                     <option value="2">Femenino</option>
                                   </select>
@@ -318,10 +319,11 @@
                         </div>
     
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="buttonGuardar" id="btnGuardarMediocamp"> Guardar </button>
+                            <button class="buttonGuardar" id="btnGuardarMedios"> Guardar </button>
                         </div>
                 </div>
               </div>
+            </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
@@ -351,7 +353,7 @@
                         <div class="col-5">
                             <label for="selectSexoDelante1" class="form-label">Sexo</label>
                             <select class="form-select" aria-label="Default select example" id="selectSexoDelante1">
-                                <option selected>Selecciona una opción</option>
+                                <option value="">Selecciona una opción</option>
                                 <option value="1">Masculino</option>
                                 <option value="2">Femenino</option>
                               </select>
@@ -379,7 +381,7 @@
                         <div class="col-5">
                             <label for="selectSexoDelante2" class="form-label">Sexo</label>
                             <select class="form-select" aria-label="Default select example" id="selectSexoDelante2">
-                                <option selected>Selecciona una opción</option>
+                                <option value="">Selecciona una opción</option>
                                 <option value="1">Masculino</option>
                                 <option value="2">Femenino</option>
                               </select>
@@ -391,8 +393,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-          </div>
+            </div>
+        </div>
     </div>
 
 
