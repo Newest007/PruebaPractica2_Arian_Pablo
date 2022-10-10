@@ -57,7 +57,14 @@ img{
     margin: auto;
 }
 
+/**/
 table.table img.imgEj3{ width: 80%;}
+/**/
+
+input{
+    width: 60%;
+    font-size: 18px;
+}
 
 table.table img{
     width: 40%;
