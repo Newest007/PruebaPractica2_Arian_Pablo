@@ -28,7 +28,7 @@
                         </div>
                         
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="menu" class="buttonGuardar" id="btnGuardarEquipo"> Guardar </button>
+                            <button type="button" class="buttonGuardar" id="btnGuardarEquipo"> Guardar </button>
                         </div>
                 </div>
         </form>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="menu" class="buttonGuardar" id="btnGuardarPortero"> Guardar </button>
+                            <button type="button" class="buttonGuardar" id="btnGuardarPortero"> Guardar </button>
                         </div>
                     </form>
                 </div>
@@ -496,111 +496,19 @@
         <div class="container p-3 border">
             <div class="row">
                 <div class="col">
-                    <h3 id="nombreEquipo"></h3>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Carnet</th>
-                                <th scope="col">Edad</th>
-                                <th scope="col">Sexo</th>
-                                <th scope="col">Posición</th>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="submit" class="buttonGuardar" id="btnMostrarDatos">Mostrar Equipo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <th><span id="lbNombrePortero"></span></th>
-                                <th><span id="lbCarnetPortero"></span></th>
-                                <th><span id="lbEdadPortero"></span></th>
-                                <th><span id="lbSexoPortero"></span></th>
-
-                                <th>Portero</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Defensa</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Defensa</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Defensa</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Defensa</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Mediocampista</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Mediocampista</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Mediocampista</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Mediocampista</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Delantero</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">11</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Delantero</th>
-                            </tr>
-                        </tbody>
-                    </table>
+    <div class="container-md p-3">
+        <div class="container p-3 border">
+            <div class="row">
+                <div class="col">
+                    <p id="divTabla"></p>
                 </div>
             </div>
         </div>
