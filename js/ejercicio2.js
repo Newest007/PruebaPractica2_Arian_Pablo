@@ -52,6 +52,12 @@ function addPortero(){
     arrayEdad[0] = document.querySelector("#inputEdadPortero").value.toString();
     arraySexo[0] = document.querySelector("#inputSexoPortero").value.toString();
 
+    //Mandamos a imprimir la informacion a la tabla
+    document.getElementById('lbNombrePortero').innerHTML = arrayNombres[0];
+    document.getElementById('lbCarnetPortero').innerHTML = arrayCarnet[0];
+    document.getElementById('lbEdadPortero').innerHTML = arrayEdad[0];
+    document.getElementById('lbSexoPortero').innerHTML = arraySexo[0];
+
 }
 
 function addDefensas(){
