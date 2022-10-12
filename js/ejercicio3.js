@@ -4,10 +4,13 @@ function recibo(cantidad1, cantidad2, cantidad3, cantidad4, cantidad5, cantidad6
 
     document.getElementById("resultado").innerHTML = "";
 
+
     resultado = (cantidad1 * 1.75) + (cantidad2 * 0.40) + (cantidad3 * 0.84) + (cantidad4 * 0.34) + (cantidad5 * 1.50) + (cantidad6 * 1.38) + (cantidad7 * 1.60) + (cantidad8 * 0.35) + (cantidad9 * 0.44) + (cantidad10 * 3.60) +  (cantidad11 * 0.80) + (cantidad12 * 1.33) + (cantidad13 * 1.65) + (cantidad13 * 1.65) + (cantidad14 * 1.52) + (cantidad15 * 0.78) + (cantidad16 * 1.20) + (cantidad17 * 0.45) + (cantidad18 * 0.40) + (cantidad19 * 0.45) + (cantidad20 * 2.75) + (cantidad21 * 0.85) + (cantidad22 * 2.75) + (cantidad23 * 3.75) + (cantidad24 * 0.63) + (cantidad25 * 0.98);
     
-    document.getElementById("resultado").innerHTML = `<br> Los detalles del recibo se muestran a continuación: <br> Aguacates x ${cantidad1} = $${cantidad1 * 1.75}
+    document.getElementById("resultado").innerHTML = `<br> Los detalles del recibo se muestran a continuación: 
+    <br>
     <br> Ajo x ${cantidad2} = $${cantidad2 * 0.40}
+    <br> Aguacates x ${cantidad1} = $${cantidad1 * 1.75} 
     <br> Apio x ${cantidad3} = $${cantidad3 * 0.84}
     <br> Banano x ${cantidad4} = $${cantidad4 * 0.34}
     <br> Brócoli x ${cantidad5} = $${cantidad5 * 1.50}
@@ -15,7 +18,7 @@ function recibo(cantidad1, cantidad2, cantidad3, cantidad4, cantidad5, cantidad6
     <br> Cebolla morada x ${cantidad7} = $${cantidad7 * 1.60}
     <br> Chile verde x ${cantidad8} = $${cantidad8 * 0.35}
     <br> Güisquil x ${cantidad9} = $${cantidad9 * 0.44}
-    <br> Kiwi x ${cantidad10} = $${cantidad10 * 3.60}
+    <br> Kiwi  x ${cantidad10} = $${cantidad10 * 3.60}
     <br> Lechuga romana x ${cantidad11} = $${cantidad11 * 0.80}
     <br> Manzana gala x ${cantidad12} = $${cantidad12 * 1.33}
     <br> Manzana verde x ${cantidad13} = $${cantidad13 * 1.65}
@@ -32,7 +35,6 @@ function recibo(cantidad1, cantidad2, cantidad3, cantidad4, cantidad5, cantidad6
     <br> Zanahoria x ${cantidad24} = $${cantidad24 * 0.63}
     <br> Zuchini x ${cantidad25} = $${cantidad25 * 0.98}
     <hr> Total = $${resultado}`;
-
 }
 
 btnObtenerRecibo.addEventListener("click", () => {

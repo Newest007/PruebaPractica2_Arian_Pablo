@@ -16,7 +16,7 @@
     </div>
 
     <div class="container-md p-3">
-        <form class="needs-validation" novalidate>
+        <form onsubmit="return false" class="needs-validation" novalidate>
                 <div class="container-md p-3 border">
                     <h3>Inscripción de equipo de futbol</h3>
                     <p>Llene los campos correspondientes para poder inscribir a cada uno de los integrantes de su equipo deportivo. Asegurese de colocar los datos correspondientes de cada campo que se le pide, ya que una vez guardados los cambios, no se podrán editar.</p>
@@ -44,7 +44,7 @@
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <form class="needs-validation" novalidate>
+                    <form onsubmit="return false" class="needs-validation" novalidate>
                         <div class="row mb-3">
                             <div class="col-7">
                                 <label for="inputNombrePortero" class="form-label">Nombre completo</label>
@@ -71,8 +71,8 @@
                                 <label for="selectSexoPortero" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoPortero" required>
                                     <option value="">Selecciona una opción</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                                 <div class="valid-feedback">Todo en orden</div>
                                 <div class="invalid-feedback">Elige una opción</div>
@@ -93,7 +93,7 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <form class="needs-validation" novalidate>
+                    <form onsubmit="return false" class="needs-validation" novalidate>
                         <div class="row mb-3">
                             <h4>- Defensa 1</h4>
                             <div class="col-7">
@@ -121,8 +121,8 @@
                                 <label for="selectSexoDefensa1" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoDefensa1" required>
                                     <option value="">Selecciona una opción</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                                 <div class="valid-feedback">Todo en orden</div>
                                 <div class="invalid-feedback">Elige una opción</div>
@@ -157,8 +157,8 @@
                                 <label for="selectSexoDefensa2" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoDefensa2" required>
                                     <option value="">Selecciona una opción</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                                 <div class="valid-feedback">Todo en orden</div>
                                 <div class="invalid-feedback">Elige una opción</div>
@@ -193,8 +193,8 @@
                                 <label for="selectSexoDefensa3" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoDefensa3" required>
                                     <option value="">Selecciona una opción</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                                 <div class="valid-feedback">Todo en orden</div>
                                 <div class="invalid-feedback">Elige una opción</div>
@@ -229,8 +229,8 @@
                                 <label for="selectSexoDefensa4" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoDefensa4" required>
                                     <option value="">Selecciona una opción</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                                 <div class="valid-feedback">Todo en orden</div>
                                 <div class="invalid-feedback">Elige una opción</div>
@@ -238,7 +238,7 @@
                         </div>
                         
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="menu" class="buttonGuardar" id="btnGuardarDefensas"> Guardar </button>
+                            <button type="button" class="buttonGuardar" id="btnGuardarDefensas"> Guardar </button>
                         </div> 
                     </form>                   
                 </div>
@@ -252,8 +252,8 @@
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <form class="needs-validation" novalidate>
-                        <form class="row mb-3">
+                    <form onsubmit="return false" class="needs-validation" novalidate>
+                        <div class="row mb-3">
                             <div class="row mb-3">
                                 <h4>- Mediocampista 1</h4>
                                 <div class="col-7">
@@ -281,8 +281,8 @@
                                     <label for="selectSexoMedio1" class="form-label">Sexo</label>
                                     <select class="form-select" aria-label="Default select example" id="selectSexoMedio1" required>
                                         <option value="">Selecciona una opción</option>
-                                        <option value="1">Masculino</option>
-                                        <option value="2">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Femenino">Femenino</option>
                                     </select>
                                     <div class="valid-feedback">Todo en orden</div>
                                     <div class="invalid-feedback">Elige una opción</div>
@@ -315,8 +315,8 @@
                                     <label for="selectSexoMedio2" class="form-label">Sexo</label>
                                     <select class="form-select" aria-label="Default select example" id="selectSexoMedio2" required>
                                         <option value="">Selecciona una opción</option>
-                                        <option value="1">Masculino</option>
-                                        <option value="2">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                     </select>
                                     <div class="valid-feedback">Todo en orden</div>
                                     <div class="invalid-feedback">Elige una opción</div>
@@ -351,8 +351,8 @@
                                     <label for="selectSexoMedio3" class="form-label">Sexo</label>
                                     <select class="form-select" aria-label="Default select example" id="selectSexoMedio3" required>
                                         <option value="">Selecciona una opción</option>
-                                        <option value="1">Masculino</option>
-                                        <option value="2">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                     </select>
                                     <div class="valid-feedback">Todo en orden</div>
                                     <div class="invalid-feedback">Elige una opción</div>
@@ -387,8 +387,8 @@
                                     <label for="selectSexoMedio4" class="form-label">Sexo</label>
                                     <select class="form-select" aria-label="Default select example" id="selectSexoMedio4" required>
                                         <option value="">Selecciona una opción</option>
-                                        <option value="1">Masculino</option>
-                                        <option value="2">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                     </select>
                                     <div class="valid-feedback">Todo en orden</div>
                                     <div class="invalid-feedback">Llenalo correctamente</div>
@@ -396,9 +396,9 @@
                             </div>
                         
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button type="menu" class="buttonGuardar" id="btnGuardarMedios" > Guardar </button>
+                                <button type="button" class="buttonGuardar" id="btnGuardarMedios" > Guardar </button>
                             </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             </div>
@@ -410,7 +410,7 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <form class="needs-validation" novalidate>
+                    <form onsubmit="return false" class="needs-validation" novalidate>
                         <div class="row mb-3">
                             <h4>- Delantero 1</h4>
                             <div class="col-7">
@@ -438,8 +438,8 @@
                                 <label for="selectSexoDelante1" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoDelante1" required>
                                     <option value="">Selecciona una opción</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                                 <div class="valid-feedback">Todo en orden</div>
                                 <div class="invalid-feedback">Elige una opción</div>
@@ -474,8 +474,8 @@
                                 <label for="selectSexoDelante2" class="form-label">Sexo</label>
                                 <select class="form-select" aria-label="Default select example" id="selectSexoDelante2" required>
                                     <option value="">Selecciona una opción</option>
-                                    <option value="1">Masculino</option>
-                                    <option value="2">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                                 <div class="valid-feedback">Todo en orden</div>
                                 <div class="invalid-feedback">Elige una opción</div>
@@ -483,7 +483,7 @@
                         </div>
                         
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="menu" class="buttonGuardar" id="btnGuardarDelante"> Guardar </button>
+                            <button type="button" class="buttonGuardar" id="btnGuardarDelante"> Guardar </button>
                         </div>
                     </form>
                   </div>
@@ -495,20 +495,18 @@
     <div class="container-md p-3">
         <div class="container p-3 border">
             <div class="row">
+                <div class="col-8">
+                    <p>* Asegurese que haya colocado todos los miembros de su equipo, ya que solo se mostrarán los que haya inscrito</p>
+                </div>
                 <div class="col">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="submit" class="buttonGuardar" id="btnMostrarDatos">Mostrar Equipo</button>
+                        <button type="submit" class="buttonGuardar" id="btnMostrarDatos">Mostrar integrantes de equipo</button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-md p-3">
-        <div class="container p-3 border">
-            <div class="row">
-                <div class="col">
-                    <p id="divTabla"></p>
+                <div class="container p-3" id="containerNombreEquipo"></div>
+                <div class="container-md p-3" id="containerEquipo"></div>
+                <div class="container-md p-3">
+                    <button onclick="location.href='../index.html'" type="button" class="buttonGuardar" id="btnMostrarDatos">Regresar</button>
                 </div>
             </div>
         </div>
